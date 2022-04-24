@@ -1,0 +1,17 @@
+.npm
+.vscode
+.bfsp
+node_modules
+*.tsbuildinfo
+.npmignore
+.*.ts
+*.log
+*.tmp
+typings/dist
+typings/dist.d.ts
+tsconfig.isolated.json
+tsconfig.typings.json
+tsconfig.json
+package.json
+yarn.lock
+.bfsw
