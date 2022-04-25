@@ -13,36 +13,30 @@ export default defineConfig((info) => {
     },
     profiles: ["web", "node", "prod"],
     packageJson: {
-      buildOptions: {
-        path: "index.ts",
-        profiles: ["web", "node"],
-        format: { format: "cjs", ext: ".cjs" },
+      license: "MIT",
+      author: "BFChainer",
+      dependencies: {
+        axios: "^0.26.1",
+        lodash: "4.17.21",
+        chalk: "5.0.1",
+        commander: "9.2.0",
       },
-      packageJson: {
-        license: "MIT",
-        author: "BFChainer",
-        dependencies: {
-          axios: "^0.26.1",
-          lodash: "4.17.21",
-          chalk: "5.0.1",
-          commander: "9.2.0",
-        },
-        devDependencies: {
-          tslib: "2.3.1",
-        },
-        peerDependencies: {
-          yargs: "17.4.1",
-          ora: "6.1.0",
-        },
+      devDependencies: {
+        tslib: "2.3.1",
+      },
+      peerDependencies: {
+        yargs: "17.4.1",
+        ora: "6.1.0",
       },
     },
     build: [
       {
+        path: "index.ts",
         name: "a-web",
         exports: {
           ".": "./index.ts",
         },
-        profiles: ["prod"],
+        profiles: ["dev"],
       },
     ],
   };
