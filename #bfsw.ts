@@ -1,9 +1,10 @@
 import { defineWorkspace } from "@bfchain/pkgm-bfsw";
-import typingsProject from "./packages/typings/#bfsp";
-import modProject from "./packages/mod/#bfsp";
+import modBody from "./packages/mod-body/#bfsp";
+import modFace from "./packages/mod-face/#bfsp";
+import typsings from "./packages/typings/#bfsp";
 export default defineWorkspace(() => {
   const config: Bfsw.Workspace = {
-    projects: [typingsProject,modProject],
+    projects: [modBody, modFace, typsings],
   };
   return config;
 });

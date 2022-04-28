@@ -1,2 +1,1 @@
-export const index = "index";
-1;
+export * from "#a";
