@@ -5,6 +5,7 @@ export default defineConfig((info) => {
     exports: {
       ".": "./index.ts",
     },
+    deps: ["mod-face"],
     packageJson: {
       license: "MIT",
       author: "BFChainer",
